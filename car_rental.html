@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+	background-color:#051147;
+	color:#fff;
+	border-color:#080808;
+	min-height:50px;
+    border:1px solid transparent;
+    padding:0px;
+}
+
+.inner-header{
+	width:80%;
+	margin:auto;
+}
+
+.logo{
+    float:left;
+	height:50px;
+	padding:15px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.header-link{
+	float:right;
+	font-size:14px;
+	height:50px;
+	padding:15px 15px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+a{
+	text-decoration:none;
+	background-color:transparent;
+    color:#ededed;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#bt1{
+    box-shadow:inset 0 3px 5px rgba(0, 0, 0, .125);     
+    border-color:#ac2925;     
+    border-radius: 5px;
+    background-color: #051147;
+    color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+select { 
+  width: 200px;
+  height: 30px;
+  margin-right:400px;
+}
+  
+input[type=text] {
+  width: 200px;
+  height: 30px;
+  margin-left:15px;
+}
+input[type=file]{
+  margin-left:20px;
+}
+label { 
+  font-color: black;
+  display: inline-block;
+  font-size: 22px;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  margin-left:150px;
+}
+input { 
+  display: inline-block;
+  float: left;
+}
+h2 { 
+  margin-left:550px;
+  color: black;
+  font-size: 250% 
+}
+.bg-image {
+  background-image: url("c5.jpg");
+  
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+ 
+  height: 100%; 
+  
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  float:right;
+  margin-right: 100px;
+}
+
+.btn:hover {
+  opacity: 0.6
+}
+footer{
+	background-color:#000;
+	color:#fff;
+	font-size:14px;
+}
+    
+.container{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+
+</style>
+</head>
+<title>Car Rental</title>
+</head>
+<body>
+	<div class="header">
+                <div class="inner-header">
+                <div class="logo">
+                    <a href="front.php">Vendedor De Autos </a>
+                </div>
+                <div class="header-link">
+                    <a href="sell_your_car.php">Sell Your Car</a>
+                    <a  href="car_rental.html">Cars for Rent</a>
+                    <a href="Service.html">Service & Repair</a>
+                    <a href="productpage.html">Cars For Sale</a>
+                
+                </div>
+                </div>
+        </div>
+		<h2>Car Rental</h2>
+    	<div class="bg-image"></div>
+	<div class="bg-text">
+	<form action=" ">
+	<p>
+	<label>Select Car :</label>
+	<input type="text" name="car" value="Car Type"><br><br>
+
+	<label>KMs to Drive :</label>
+	<input type="text" name="distance" value="0 Kms"><br><br>
+
+	<label>Start City :</label>
+	<input type="text" name="Start City" value="Start City"><br><br>
+
+	<label>End City :</label>
+	<input type="text" name="End city" value="End City"><br><br>
+
+	</form>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    	<label>License Photo :</label>
+    	<input type="file" name="fileToUpload" id="fileToUpload">
+    	<input type="submit" value="Upload Image" name="submit">
+	<br><br>
+	</form>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    	<label>Driver's Photo :</label>
+    	<input type="file" name="fileToUpload" id="fileToUpload">
+    	<input type="submit" value="Upload Image" name="submit">
+	</form>
+	</p>
+	<br><br><br>
+	<button class="btn">Done</button>
+	</div>
+	<footer>
+                <div class="container">
+                <p style="text-align:center;">Copyright © Vendedor de Autos. All Rights Reserved | Contact Us: +91 90000 00000</p>
+                </div>
+        </footer>
+</body>
+</html>
